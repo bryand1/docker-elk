@@ -76,6 +76,7 @@ networks:
 
   elk:
     driver: bridge
+    name: elk
 
 volumes:
 
