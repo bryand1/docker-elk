@@ -39,7 +39,8 @@ services:
         hard: -1
     volumes:
       - esdata2:/usr/share/elasticsearch/data
-
+    networks:
+      - elk
 
   logstash:
     build:
