@@ -23,6 +23,7 @@ services:
       ES_JAVA_OPTS: "-Xmx1024m -Xms1024m"
     networks:
       - elk
+      - crypto
 
   elasticsearch2:
     build:
@@ -77,6 +78,9 @@ networks:
   elk:
     driver: bridge
     name: elk
+  crypto:
+    driver: bridge
+    name: crypto
 
 volumes:
 
